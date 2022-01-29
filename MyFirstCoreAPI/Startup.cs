@@ -26,13 +26,13 @@ namespace MyFirstCoreAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSwaggerGen(option => {
-                option.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo() { 
-                Title="Raja Swagg",
-                Description="Raja swagg desc",
-                Version="v1"
-                });
-            });
+            //services.AddSwaggerGen(option => {
+            //    option.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo() { 
+            //    Title="Raja Swagg",
+            //    Description="Raja swagg desc",
+            //    Version="v1"
+            //    });
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,11 +51,11 @@ namespace MyFirstCoreAPI
             //{
             //    endpoints.MapControllers();
             //});
-            app.UseSwagger();
-            app.UseSwaggerUI(option=>
-            {
-                option.SwaggerEndpoint("/swagger/v1/swagger.json", "Raja Swagg demo");
-            });
+            //app.UseSwagger();
+            //app.UseSwaggerUI(option=>
+            //{
+            //    option.SwaggerEndpoint("/swagger/v1/swagger.json", "Raja Swagg demo");
+            //});
             app.UseFirstMiddleware();
 
             //app.UseHttpsRedirection();
