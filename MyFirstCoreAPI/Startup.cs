@@ -45,7 +45,7 @@ namespace MyFirstCoreAPI
             
             app.UseRouting();
             app.UseStaticFiles();
-            // app.UseAuthorization();
+             app.UseAuthorization();
 
             //app.UseEndpoints(endpoints =>
             //{
