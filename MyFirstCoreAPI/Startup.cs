@@ -44,8 +44,8 @@ namespace MyFirstCoreAPI
             }
             
             app.UseRouting();
-
-           // app.UseAuthorization();
+            app.UseStaticFiles();
+            // app.UseAuthorization();
 
             //app.UseEndpoints(endpoints =>
             //{
@@ -85,7 +85,7 @@ namespace MyFirstCoreAPI
             //app.UseAuthentication();
             //app.UseAuthorization();
             //app.UseSession();
-            //app.UseStaticFiles();
+           
             //app.UseRouting();
             //app.UseResponseCompression();
 
