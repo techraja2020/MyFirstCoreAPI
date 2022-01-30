@@ -40,10 +40,13 @@ namespace MyFirstCoreAPI
         {
             //if (env.IsDevelopment())
             //{
-            //Added By Raja from branch1
+
+            //Added By Karthi from branch1
+
             //app.UseDeveloperExceptionPage();
             //}
-            
+
+
             app.UseRouting();
             app.UseStaticFiles();
              app.UseAuthorization();
